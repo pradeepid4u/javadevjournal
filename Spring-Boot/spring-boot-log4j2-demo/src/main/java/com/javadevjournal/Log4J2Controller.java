@@ -12,11 +12,11 @@ public class Log4J2Controller {
 
     @GetMapping(value = "/greeting")
     public String greeting() {
-
-        LOG.debug("Debugging log in our greeting method");
-        LOG.info("Info log in our greeting method");
-        LOG.warn("Warning log in our greeting method");
-        LOG.error("Error in our greeting method");
+        String spi = "1234123412341234";
+        LOG.error("1234123412341234 Debugging log in our greeting method",spi);
+        LOG.info("1234123412341234 Info log in our greeting method pradeep@wellsfargo.com 121212341");
+        LOG.warn("Warning log in our greeting method 1234123412341234");
+        LOG.error("Error in our greeting method 1234123412341234");
         return "Hello!!!";
     }
 }
