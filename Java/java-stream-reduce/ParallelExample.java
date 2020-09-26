@@ -9,7 +9,7 @@ public class ParallelExample {
        final List<Integer> LARGE_LIST = new ArrayList<>(100000000);
 
        for (int i = 0; i < 100000000; i++)
-           LARGE_LIST.add(random.nextInt(10000));
+           LARGE_LIST.add(random.nextInt(10000));//test ining fi git refor cgagnes
 
        Instant startTime = Instant.now();
        int largestNumber = LARGE_LIST.stream().reduce(0, (result, current) -> result > current ? result : current);
